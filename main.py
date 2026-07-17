@@ -1,5 +1,7 @@
 import types
+from utils import logger
 
+@logger('main.log')
 class FlatIterator:
 
     def __init__(self, list_of_list):
@@ -24,6 +26,7 @@ class FlatIterator:
 
         raise StopIteration
 
+@logger('main.log')
 def flat_generator(list_of_lists):
 
     list_index = 0
